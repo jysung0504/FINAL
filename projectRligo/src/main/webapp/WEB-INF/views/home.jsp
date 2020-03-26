@@ -16,6 +16,7 @@
 	<div class="container">
 	<div class="row">
 	<jsp:include page="common/asside.jsp"/>
+	<%-- <jsp:include page="board/postingdetail.jsp"/> --%>
 	<!-- 풋터 -->
 	<jsp:include page="board/blogdetail.jsp"/>
 	</div>
