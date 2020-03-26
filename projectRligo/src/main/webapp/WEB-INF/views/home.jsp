@@ -12,14 +12,15 @@
 	<jsp:include page="common/menubar.jsp"/>
 	
 	<!-- asside -->
-	<%-- <section class="cat_product_area section_padding">
+	<section class="cat_product_area section_padding">
 	<div class="container">
 	<div class="row">
 	<jsp:include page="common/asside.jsp"/>
 	<!-- 풋터 -->
+	<jsp:include page="board/blogdetail.jsp"/>
 	</div>
 	</div>
-	</section> <!-- asside 예시 --> --%>
+	</section> <!-- asside 예시 -->
 <%-- 	<jsp:include page="theme/categoryList.jsp"/> --%>
 	<jsp:include page="common/footer.jsp"/>
 	</body>
