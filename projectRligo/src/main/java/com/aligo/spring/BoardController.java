@@ -1,4 +1,4 @@
-package com.rligo.spring;
+package com.aligo.spring;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +8,6 @@ public class BoardController {
 	
 	@RequestMapping("blogInsert.do")
 	public String boardInsert() {
-		return "se2/write";
+		return "redirect:/se2/write.jsp";
 	}
 }

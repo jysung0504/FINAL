@@ -1,4 +1,4 @@
-package com.rligo.spring;
+package com.aligo.spring;
 
 import java.text.DateFormat;
 import java.util.Date;
