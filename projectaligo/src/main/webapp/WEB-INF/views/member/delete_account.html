@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="KOR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>aranoz</title>
+    <link rel="stylesheet" href="resources/css/nice-select.css">
+   
+    <link rel="stylesheet" href="css/price_rangs.css">
+ 
+</head>
+
+<body>
+    <!--::header part start::-->
+   <%@ include file="../common/menubar.jsp"%>
+    <!-- Header part end-->
+
+    <!--================Home Banner Area =================-->
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item">
+                            <h2>Shop Category</h2>
+                            <p>Home <span>-</span> Shop Category</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    <!--================Category Product Area =================-->
+    <section class="cat_product_area section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="left_sidebar_area">
+                        <aside class="left_widgets p_filter_widgets">
+                            <div class="l_w_title">
+                                <h3>My List</h3>
+                            </div>
+                            <div class="widgets_inner">
+                                <ul class="list">
+                                    <li>
+                                        <a href="liked_list.html">Liked List ♡</a>
+                                        <span>(31)</span>
+                                    </li>
+                                    <li>
+                                        <a href="my_review.html">My Reveiw</a>
+                                        <span>(6)</span>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#">Meat Alternatives</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Fresh Fish</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Meat Alternatives</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Meat</a>
+                                        <span>(250)</span>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </aside>
+
+                        <aside class="left_widgets p_filter_widgets">
+                            <div class="l_w_title">
+                                <h3>My Profile</h3>
+                            </div>
+                            <div class="widgets_inner">
+                                <ul class="list">
+                                    <li>
+                                        <a href="edit_profile.html">Edit Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="delete_account.html">Delete Account</a>
+                                    </li>
+                                    <!-- <li class="active">
+                                        <a href="#">Gionee</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Micromax</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Samsung</a>
+                                    </li> -->
+                                </ul>
+                                <!-- <ul class="list">
+                                    <li>
+                                        <a href="#">Apple</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Asus</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">Gionee</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Micromax</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Samsung</a>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </aside>
+
+                        <!-- <aside class="left_widgets p_filter_widgets">
+                            <div class="l_w_title">
+                                <h3>Filter</h3>
+                            </div>
+                            <div class="widgets_inner">
+                                <ul class="list">
+                                    <li>
+                                        <a href="#">Black</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Black Leather</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">Black with red</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Gold</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Spacegrey</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside> -->
+
+                        <!-- <aside class="left_widgets p_filter_widgets price_rangs_aside">
+                            <div class="l_w_title">
+                                <h3>Price Filter</h3>
+                            </div>
+                            <div class="widgets_inner">
+                                <div class="range_item"> -->
+                                    <!-- <div id="slider-range"></div> -->
+                                    <!-- <input type="text" class="js-range-slider" value="" />
+                                    <div class="d-flex">
+                                        <div class="price_text">
+                                            <p>Price :</p>
+                                        </div>
+                                        <div class="price_value d-flex justify-content-center">
+                                            <input type="text" class="js-input-from" id="amount" readonly />
+                                            <span>to</span>
+                                            <input type="text" class="js-input-to" id="amount" readonly />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside> -->
+                    </div>
+                </div>
+                <div class="col-lg-9" >
+                    <h3 style="align-self: center;">Delete Account</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="product_top_bar d-flex justify-content-between align-items-center" style="align-self: center;">
+                                <form action="#" style="margin-left: 5%; width: 45%;">
+                                    <label style="margin-bottom: 0; margin-top: 5%;">email</label>
+                                    <div class="mt-10">
+                                        <input type="email" name="EMAIL" placeholder="Email address *수정불가*" onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Email address'" required class="single-input" disabled="disabled">
+                                    </div>
+                                    <label style="margin-bottom: 0; margin-top: 5%;">password</label>
+                                    <div class="mt-10">
+                                        <input type="password" id="password" name="password" placeholder="password" onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'password'" required class="single-input">
+                                    </div>                                    
+                                    
+                                    <br><br>
+                                    <input class="genric-btn primary-border small" type="button" value="Delete Account" style="margin-left: 30%;"onclick="return deletemember()">
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- jquery plugins here-->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- slick js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/price_rangs.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+    <script>		
+        function deletemember(){
+            if($('#password').val() == ""){
+            alert("비밀번호를 입력해주세요!");
+            return false;
+            }     
+            location.href ='#' //true때는 서블릿으로 넘겨줍시당~~
+        }
+    </script>
+
+
+</body>
+
+</html>
