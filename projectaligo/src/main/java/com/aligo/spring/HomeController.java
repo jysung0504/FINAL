@@ -65,6 +65,22 @@ public class HomeController {
 	
 	@RequestMapping("deleteMember.do")
 	public String deleteMember() {
-		return "member/deleteMember";
+		return "member/deleteAccount";
 	}
+	
+	@RequestMapping("adminView.do")
+	public String adminView() {
+		return "admin/adminView";
+	}
+	
+	@RequestMapping("qna.do")
+	public String qna() {
+		return "admin/QnA";
+	}
+	
+	@RequestMapping("reportlist.do")
+	public String reportList() {
+		return "admin/reportlist";
+	}
+	
 }

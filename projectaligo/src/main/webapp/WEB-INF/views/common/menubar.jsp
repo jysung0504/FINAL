@@ -99,13 +99,18 @@
                             </a>
                            
                             <!-- 로그인 후 -->
+                             <a href="adminView.do">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data-balloon="Admin" data-balloon-pos="down-right">
+                                    <i class="fas fa-user-circle" style="margin-left: 0px;"></i>
+                                </span>
+                            </a>
                                                             
                             <a href="myPage.do">
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data-balloon="My Page" data-balloon-pos="down-right">
                                     <i class="fas fa-user-circle" style="margin-left: 0px;"></i>
                                 </span>
                             </a>
-                            <a href="">
+                            <a href="likedList.do">
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data-balloon="Likes" data-balloon-pos="down-right">
                                     <i class="far fa-heart" style="margin-left: 0px;"></i>
                                 </span>

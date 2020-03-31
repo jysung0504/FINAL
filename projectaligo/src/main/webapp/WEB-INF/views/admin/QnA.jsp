@@ -1,21 +1,13 @@
-
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="kor">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/basic.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/margin.css">
-    <link rel="stylesheet" href="css/table.css">
-
-    <title>QNA</title>
-
-<style>
-
-table {
+<meta charset="UTF-8">
+<title>QnA</title>
+   
+ <style>
+ table {
     width: 100%;
     border-top: 1px solid #444444;
     border-collapse: collapse;
@@ -35,12 +27,22 @@ table {
   tbody tr:nth-child(2n+1) {
     background-color: #EDECF0;
   }
-
-</style>
+  
+  #pagenation li{
+  	display:inline-block;
+  }
+ </style>
 </head>
 <body>
-
-    <div class="qnaPage">
+	<%@ include file="../common/menubar.jsp" %>
+	
+	<div class="col-lg-9" >
+                    <h3 style="align-self: center;">Delete Account</h3>
+                    <hr>
+                    <div class="row">
+	<%@ include file="assideAdmin.jsp" %>
+                        <div class="col-lg-12">
+    <div class="qnaPage" style="width:30%">
      
       <h2>문의하기</h2>
       <hr>
@@ -84,8 +86,12 @@ table {
           <li><button class="listbtn" value="+1">&gt;</button></li>
       </ul>
   
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 </div>
-
+	<%@ include file="../common/footer.jsp" %>
 </body>
 </html>

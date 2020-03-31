@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="kor">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/basic.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/margin.css">
-    <link rel="stylesheet" href="css/table.css">
 
-    <title>QNA</title>
+    <title>Report</title>
 
 <style>
 
@@ -32,7 +29,10 @@ table {
   tbody tr:nth-child(2n+1) {
     background-color: #EDECF0;
   }
-
+	
+  #pagenation li{
+  	display:inline-block;
+  }
 
 
 </style>
@@ -41,6 +41,9 @@ table {
 
 </head>
 <body>
+	<%@ include file="../common/menubar.jsp" %>
+	
+	<%@ include file="assideAdmin.jsp" %>
     <div class="reportPage">
 
       <h2>신고내역</h2>
@@ -87,7 +90,7 @@ table {
     </div>
     <div class=Pagenation>
 
-      <ul id="pagenation" align="center" style="margin-left:-90px;">
+      <ul id="pagenation" align="center" style="margin-left:-90px; display:inline-block">
         <li><button class="listbtn" value="-1">&lt;</button></li>
         <li><button class="listbtn" value="1">1</button></li>
         <li><button class="listbtn" value="2">2</button></li>
@@ -98,7 +101,6 @@ table {
 </div>
 </div>
 </div>
-</div>
-
+	<%@ include file="../common/footer.jsp" %>
 </body>
 </html>
